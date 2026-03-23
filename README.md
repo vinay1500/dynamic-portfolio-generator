@@ -32,7 +32,7 @@ A dynamic portfolio generator that lets users build and preview portfolio websit
 ![Template Selection](./Screenshots/Template.png)
 
 ### Generated Portfolio Preview
-![Generated Portfolio Preview](./Screenshots/View_Portfolio.png)
+![Generated Portfolio Preview](./Screenshots/View_Portfolios.png)
 
 ### Mobile View
 ![Mobile View](./Screenshots/mobile-view.png)
