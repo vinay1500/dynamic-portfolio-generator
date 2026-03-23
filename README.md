@@ -2,10 +2,11 @@
 
 A dynamic portfolio generator that lets users build and preview portfolio websites using structured forms and reusable templates.
 
+<!---
 ## Live Demo
 
 **Live link:** Not added yet
-<!---
+
 > Add your deployed app link here:
 >
 > `https://your-live-demo-link.com`
@@ -20,7 +21,7 @@ A dynamic portfolio generator that lets users build and preview portfolio websit
 
 ## Screenshots
 
-<!---> Add your screenshots inside a `screenshots/` folder in the root of the repository. --->
+<!--- Add your screenshots inside a `screenshots/` folder in the root of the repository. --->
 
 ### Home Page
 ![Home Page](./Screenshots/Home_Page.png)
