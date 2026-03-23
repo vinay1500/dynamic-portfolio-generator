@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+.env
+.env.local
+.DS_Store
+.vscode/
+.idea/
+*.log
+guidelines.zip
+React Task Assignment-6-9.pdf
+src (2).zip
