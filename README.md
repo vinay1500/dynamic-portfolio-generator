@@ -41,9 +41,17 @@ A dynamic portfolio generator that lets users build and preview portfolio websit
 
 ## Overview
 
-Dynamic Portfolio Generator is a web application designed to help users create professional portfolio websites without building each page manually from scratch. Users can enter structured information such as profile details, skills, projects, education, and experience, then generate a portfolio layout using predefined templates.
+Dynamic Portfolio Generator is a portfolio-building web application designed to help users create polished personal portfolio pages without manually coding every section from scratch. Users can enter structured information such as profile details, skills, projects, education, and experience, then generate a portfolio layout using predefined templates.
 
 The goal of the project is to simplify portfolio creation for students, developers, freelancers, and job seekers by turning form-based input into a presentable portfolio interface.
+
+Users can:
+- choose a professional portfolio template
+- enter their details through a guided multi-step form
+- save portfolios locally
+- browse saved portfolios
+- open portfolio detail pages
+- edit existing entries later
 
 ---
 
@@ -53,11 +61,13 @@ The application follows a component-based frontend architecture focused on modul
 
 ### High-level flow
 
-- users enter portfolio data through structured forms
-- form data is stored in application state
-- a selected template determines the rendered portfolio layout
-- routing enables navigation between builder and preview views
-- preview components render the final portfolio dynamically from entered data
+1. Users land on the home page.
+2. They choose a portfolio template.
+3. The selected template is stored locally.
+4. They complete a multi-step portfolio form.
+5. Portfolio data is saved in local storage.
+6. Saved portfolios appear in the professionals listing page.
+7. Users can open a portfolio detail page or edit an existing portfolio.
 
 ### Core modules
 
@@ -80,18 +90,38 @@ The application follows a component-based frontend architecture focused on modul
 
 ## Feature List
 
-- Dynamic portfolio generation from user input
-- Multi-section form for portfolio data entry
-- Template-based portfolio rendering
-- Real-time or near real-time preview
-- Reusable UI component structure
-- Client-side routing between pages/views
-- Editable portfolio content
-- Responsive portfolio layout support
-- Clean separation between data input and presentation
-- Portfolio project showcase for personal branding
+- Modern landing page with clear CTA flow
+- Template selection screen with 2 portfolio designs
+- Multi-step portfolio creation form
+- Hero section input
+- About section input
+- Skills/tags input
+- Services section input
+- Projects/portfolio section input
+- Testimonials section input
+- Optional blog section
+- Contact section
+- Local persistence with localStorage
+- Browse all saved portfolios
+- Search portfolios by name, title, and bio
+- Filter portfolios by skill and role
+- Open detailed portfolio pages
+- Edit saved portfolios
+- Responsive modern UI
+- Reusable template-based rendering
 
 ---
+### Templates Included
+## Template 1 — Bold & Bright
+full-screen hero section
+grid portfolio layout
+horizontal testimonials
+gradient contact section
+Template 2 — Modern & Professional
+split hero layout
+masonry portfolio grid
+timeline-style skills display
+modern card-based design
 
 ## Tech Stack
 
@@ -99,6 +129,9 @@ The application follows a component-based frontend architecture focused on modul
 - TypeScript
 - React Router
 - CSS / modular styling
+- Tailwind CSS
+- Lucide React
+- Local Storage for persistence
 - Component-based frontend architecture
 
 ---
@@ -107,19 +140,36 @@ The application follows a component-based frontend architecture focused on modul
 
 ```bash
 dynamic-portfolio-generator/
-├── public/
-├── screenshots/
+├── Screenshots/
+│   ├── Create_Portfolio.png
+│   ├── Home_Page.png
+│   ├── Template.png
+│   └── View_Portfolios.png
 ├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── templates/
-│   ├── routes/
-│   ├── data/
-│   ├── types/
-│   ├── App.tsx
-│   └── main.tsx / index.tsx
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── figma/
+│   │   │   └── templates/
+│   │   │       ├── Template1.tsx
+│   │   │       └── Template2.tsx
+│   │   ├── pages/
+│   │   │   ├── HomePage.tsx
+│   │   │   ├── PortfolioFormPage.tsx
+│   │   │   ├── PortfolioPage.tsx
+│   │   │   ├── ProfessionalsListPage.tsx
+│   │   │   └── TemplateSelectionPage.tsx
+│   │   ├── App.tsx
+│   │   ├── main.tsx
+│   │   └── routes.ts
+│   ├── imports/
+│   └── styles/
+├── .gitignore
+├── ATTRIBUTIONS.md
+├── index.html
+├── package-lock.json
 ├── package.json
-├── tsconfig.json
+├── postcss.config.mjs
+├── vite.config.ts
 └── README.md
 ```
 ### Getting Started
@@ -143,11 +193,35 @@ npm run dev
 # Build for production
 npm run build
 ## How It Works
-The user fills out portfolio-related sections through forms.
-The application stores that information in shared frontend state.
-The user selects a template/layout.
-The preview screen renders a complete portfolio using the entered data.
-The same data can be reused across multiple visual templates.
+1. Choose a template
+
+The user selects one of the available portfolio templates.
+
+2. Fill the form
+
+The app guides the user through multiple sections:
+
+Hero Section
+About Me
+Skills
+Services
+Portfolio
+Testimonials
+Blog
+Contact
+3. Save the portfolio
+
+The form data is saved locally in the browser.
+
+4. View portfolios
+
+Users can browse created portfolios from the professionals listing page.
+
+5. Open or edit
+
+Each saved portfolio can be viewed in detail or edited later.
+
+
 ## Future Improvements
 Add export to PDF
 Add theme customization and color presets
