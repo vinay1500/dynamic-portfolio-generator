@@ -23,19 +23,19 @@ A dynamic portfolio generator that lets users build and preview portfolio websit
 <!---> Add your screenshots inside a `screenshots/` folder in the root of the repository. --->
 
 ### Home Page
-![Home Page](./screenshots/Home_Page.png)
+![Home Page](./Screenshots/Home_Page.png)
 
 ### Portfolio Form
-![Portfolio Form](./screenshots/Create_Portfolio.png)
+![Portfolio Form](./Screenshots/Create_Portfolio.png)
 
 ### Template Selection
-![Template Selection](./screenshots/Template.png)
+![Template Selection](./Screenshots/Template.png)
 
 ### Generated Portfolio Preview
-![Generated Portfolio Preview](./screenshots/View_Portfolio.png)
+![Generated Portfolio Preview](./Screenshots/View_Portfolio.png)
 
 ### Mobile View
-![Mobile View](./screenshots/mobile-view.png)
+![Mobile View](./Screenshots/mobile-view.png)
 
 ---
 
@@ -103,7 +103,7 @@ The application follows a component-based frontend architecture focused on modul
 
 ---
 
-## Suggested Folder Structure
+## Folder Structure
 
 ```bash
 dynamic-portfolio-generator/
@@ -121,7 +121,7 @@ dynamic-portfolio-generator/
 ├── package.json
 ├── tsconfig.json
 └── README.md
-
+```
 ### Getting Started
    ## Prerequisites
 
